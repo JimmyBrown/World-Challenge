@@ -10,11 +10,30 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    // MARK: - Outlets
+    // Word || characters
+    // word entryfield
+    // words view
+    // results ctr label
+    
+    // MARK: - Properties
+    
+    // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+    
+    // MARK: - Helpers
+    func updateViews() {
+        
+    }
+    
+    
+    // MARK: - Actions
+    // addButtonTapped
+    
+    // doneButtonTapped
 
 }
 
