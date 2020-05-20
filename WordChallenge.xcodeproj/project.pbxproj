@@ -13,6 +13,7 @@
 		BFD006992475BD3C003003B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFD006972475BD3C003003B0 /* Main.storyboard */; };
 		BFD0069B2475BD3E003003B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFD0069A2475BD3E003003B0 /* Assets.xcassets */; };
 		BFD0069E2475BD3E003003B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFD0069C2475BD3E003003B0 /* LaunchScreen.storyboard */; };
+		E279F9CC2475C1B400FFF452 /* anagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = E279F9CB2475C1B400FFF452 /* anagram.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		BFD0069A2475BD3E003003B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFD0069D2475BD3E003003B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BFD0069F2475BD3E003003B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E279F9CB2475C1B400FFF452 /* anagram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = anagram.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +42,7 @@
 		BFD006852475BD3C003003B0 = {
 			isa = PBXGroup;
 			children = (
+				E279F9CA2475C19900FFF452 /* model */,
 				BFD006902475BD3C003003B0 /* WordChallenge */,
 				BFD0068F2475BD3C003003B0 /* Products */,
 			);
@@ -73,6 +76,14 @@
 				BFD0069F2475BD3E003003B0 /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		E279F9CA2475C19900FFF452 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				E279F9CB2475C1B400FFF452 /* anagram.swift */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +160,7 @@
 				BFD006962475BD3C003003B0 /* ViewController.swift in Sources */,
 				BFD006922475BD3C003003B0 /* AppDelegate.swift in Sources */,
 				BFD006942475BD3C003003B0 /* SceneDelegate.swift in Sources */,
+				E279F9CC2475C1B400FFF452 /* anagram.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
