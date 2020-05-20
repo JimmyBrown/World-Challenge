@@ -12,10 +12,15 @@ class ViewController: UIViewController {
 
     // MARK: - Outlets
     // Word || characters
+    @IBOutlet weak var anagramWordLabel: UILabel!
     // word entryfield
+    @IBOutlet weak var wordEntryTextField: UITextField!
     // words view
+    @IBOutlet weak var correctWordsLabel: UILabel!
     // results ctr label
+    @IBOutlet weak var resultsLabel: UILabel!
     
+    @IBOutlet weak var doneButton: UIButton!
     // MARK: - Properties
     
     // MARK: - Lifecycle
@@ -32,8 +37,12 @@ class ViewController: UIViewController {
     
     // MARK: - Actions
     // addButtonTapped
+    @IBAction func addWordButton(_ sender: Any) {
+    }
     
     // doneButtonTapped
-
+    @IBAction func doneButtonTapped(_ sender: Any) {
+    }
+    
 }
 
