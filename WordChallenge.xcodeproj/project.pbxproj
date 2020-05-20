@@ -15,7 +15,7 @@
 		BFD006992475BD3C003003B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFD006972475BD3C003003B0 /* Main.storyboard */; };
 		BFD0069B2475BD3E003003B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFD0069A2475BD3E003003B0 /* Assets.xcassets */; };
 		BFD0069E2475BD3E003003B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFD0069C2475BD3E003003B0 /* LaunchScreen.storyboard */; };
-		E279F9CC2475C1B400FFF452 /* anagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = E279F9CB2475C1B400FFF452 /* anagram.swift */; };
+		E279F9CC2475C1B400FFF452 /* DataAnagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = E279F9CB2475C1B400FFF452 /* DataAnagram.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +29,7 @@
 		BFD0069A2475BD3E003003B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFD0069D2475BD3E003003B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BFD0069F2475BD3E003003B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E279F9CB2475C1B400FFF452 /* anagram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = anagram.swift; sourceTree = "<group>"; };
+		E279F9CB2475C1B400FFF452 /* DataAnagram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataAnagram.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +67,6 @@
 				BFD006972475BD3C003003B0 /* Main.storyboard */,
 				BFD006A52475BE88003003B0 /* Resources */,
 				A64AD3032475C4EB0072F022 /* AnagramController.swift */,
-				A64AD3052475C53F0072F022 /* Anagram.swift */,
 			);
 			path = WordChallenge;
 			sourceTree = "<group>";
@@ -87,7 +86,8 @@
 		E279F9CA2475C19900FFF452 /* model */ = {
 			isa = PBXGroup;
 			children = (
-				E279F9CB2475C1B400FFF452 /* anagram.swift */,
+				E279F9CB2475C1B400FFF452 /* DataAnagram.swift */,
+				A64AD3052475C53F0072F022 /* Anagram.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -168,7 +168,7 @@
 				A64AD3042475C4EB0072F022 /* AnagramController.swift in Sources */,
 				BFD006922475BD3C003003B0 /* AppDelegate.swift in Sources */,
 				BFD006942475BD3C003003B0 /* SceneDelegate.swift in Sources */,
-				E279F9CC2475C1B400FFF452 /* anagram.swift in Sources */,
+				E279F9CC2475C1B400FFF452 /* DataAnagram.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

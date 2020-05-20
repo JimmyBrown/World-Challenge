@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Anagram {
+struct AnagramData {
     
     let keyword = ["pots","horse","soup","simple","tooth", "bread", "water", "ocean"]
     let anagrams = [ "pots": ["Pots", "Opts", "Post", "Stop", "Pots", "Tops", "Spot"],
