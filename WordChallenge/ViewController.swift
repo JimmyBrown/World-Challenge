@@ -18,7 +18,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var resultsCounterLabel: UILabel!
     @IBOutlet weak var doneButtonTextSwap: UIButton!
     
-    @IBOutlet weak var doneButton: UIButton!
     // MARK: - Properties
     
     // MARK: - Lifecycle
@@ -42,3 +41,4 @@ class ViewController: UIViewController {
 
 }
 
+}
