@@ -56,15 +56,23 @@
 		BFD006902475BD3C003003B0 /* WordChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				BFD006912475BD3C003003B0 /* AppDelegate.swift */,
-				BFD006932475BD3C003003B0 /* SceneDelegate.swift */,
 				BFD006952475BD3C003003B0 /* ViewController.swift */,
 				BFD006972475BD3C003003B0 /* Main.storyboard */,
+				BFD006A52475BE88003003B0 /* Resources */,
+			);
+			path = WordChallenge;
+			sourceTree = "<group>";
+		};
+		BFD006A52475BE88003003B0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BFD006912475BD3C003003B0 /* AppDelegate.swift */,
+				BFD006932475BD3C003003B0 /* SceneDelegate.swift */,
 				BFD0069A2475BD3E003003B0 /* Assets.xcassets */,
 				BFD0069C2475BD3E003003B0 /* LaunchScreen.storyboard */,
 				BFD0069F2475BD3E003003B0 /* Info.plist */,
 			);
-			path = WordChallenge;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,7 +294,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 22HUHPT9D9;
-				INFOPLIST_FILE = WordChallenge/Info.plist;
+				INFOPLIST_FILE = WordChallenge/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +312,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 22HUHPT9D9;
-				INFOPLIST_FILE = WordChallenge/Info.plist;
+				INFOPLIST_FILE = WordChallenge/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
