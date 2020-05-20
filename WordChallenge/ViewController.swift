@@ -11,14 +11,12 @@ import UIKit
 class ViewController: UIViewController {
 
     // MARK: - Outlets
-    // Word || characters
-    @IBOutlet weak var anagramWordLabel: UILabel!
-    // word entryfield
-    @IBOutlet weak var wordEntryTextField: UITextField!
-    // words view
-    @IBOutlet weak var correctWordsLabel: UILabel!
-    // results ctr label
-    @IBOutlet weak var resultsLabel: UILabel!
+
+    @IBOutlet weak var enterWordTextField: UITextField!
+    @IBOutlet weak var wordToAnagramLabel: UILabel!
+    @IBOutlet weak var correctWordTextView: UILabel!
+    @IBOutlet weak var resultsCounterLabel: UILabel!
+    @IBOutlet weak var doneButtonTextSwap: UIButton!
     
     @IBOutlet weak var doneButton: UIButton!
     // MARK: - Properties
@@ -37,12 +35,10 @@ class ViewController: UIViewController {
     
     // MARK: - Actions
     // addButtonTapped
-    @IBAction func addWordButton(_ sender: Any) {
+
+    @IBAction func addButtonTapped(_ sender: Any) {
     }
-    
-    // doneButtonTapped
     @IBAction func doneButtonTapped(_ sender: Any) {
-    }
-    
+
 }
 
