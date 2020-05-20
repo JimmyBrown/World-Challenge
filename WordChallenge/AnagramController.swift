@@ -11,6 +11,8 @@ import Foundation
 class AnagramController {
     
     static let shared = AnagramController()
+    let data = DataAnagram()
+    
     
     var anagrams: [Anagram] = []
     
