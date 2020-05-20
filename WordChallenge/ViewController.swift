@@ -12,11 +12,16 @@ class ViewController: UIViewController {
 
     // MARK: - Outlets
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1e5313d3adfec8683cb2bd404b237f327d449c85
     @IBOutlet weak var enterWordTextField: UITextField!
     @IBOutlet weak var wordToAnagramLabel: UILabel!
     @IBOutlet weak var correctWordTextView: UILabel!
     @IBOutlet weak var resultsCounterLabel: UILabel!
     @IBOutlet weak var doneButtonTextSwap: UIButton!
+<<<<<<< HEAD
 =======
     // Word || characters
     @IBOutlet weak var anagramWordLabel: UILabel!
@@ -27,6 +32,8 @@ class ViewController: UIViewController {
     // results ctr label
     @IBOutlet weak var resultsLabel: UILabel!
 >>>>>>> 2ccc811f9070371d9fd8f86928ae98dd503acce3
+=======
+>>>>>>> 1e5313d3adfec8683cb2bd404b237f327d449c85
     
     @IBOutlet weak var doneButton: UIButton!
     // MARK: - Properties
@@ -46,6 +53,7 @@ class ViewController: UIViewController {
     // MARK: - Actions
     // addButtonTapped
 <<<<<<< HEAD
+<<<<<<< HEAD
     @IBAction func addButtonTapped(_ sender: Any) {
     }
     @IBAction func doneButtonTapped(_ sender: Any) {
@@ -58,5 +66,12 @@ class ViewController: UIViewController {
     @IBAction func doneButtonTapped(_ sender: Any) {
     }
     
+=======
+
+    @IBAction func addButtonTapped(_ sender: Any) {
+    }
+    @IBAction func doneButtonTapped(_ sender: Any) {
+
+>>>>>>> 1e5313d3adfec8683cb2bd404b237f327d449c85
 }
 

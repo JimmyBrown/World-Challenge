@@ -44,10 +44,16 @@
                                         </state>
                                         <connections>
 <<<<<<< HEAD
+<<<<<<< HEAD
                                             <action selector="addButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Afu-Od-Nbs"/>
 =======
                                             <action selector="addWordButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7qk-o0-SfW"/>
 >>>>>>> 2ccc811f9070371d9fd8f86928ae98dd503acce3
+=======
+
+                                            <action selector="addButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Afu-Od-Nbs"/>
+
+>>>>>>> 1e5313d3adfec8683cb2bd404b237f327d449c85
                                         </connections>
                                     </button>
                                 </subviews>
@@ -75,10 +81,16 @@
                                         </state>
                                         <connections>
 <<<<<<< HEAD
+<<<<<<< HEAD
                                             <action selector="doneButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="926-TT-jee"/>
 =======
                                             <action selector="doneButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T2s-zR-S7p"/>
 >>>>>>> 2ccc811f9070371d9fd8f86928ae98dd503acce3
+=======
+
+                                            <action selector="doneButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="926-TT-jee"/>
+
+>>>>>>> 1e5313d3adfec8683cb2bd404b237f327d449c85
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Results: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Glj-44-LYQ">
@@ -118,11 +130,16 @@
                     </view>
                     <connections>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1e5313d3adfec8683cb2bd404b237f327d449c85
                         <outlet property="correctWordTextView" destination="CRv-UI-FLX" id="ZIv-vR-1zb"/>
                         <outlet property="doneButtonTextSwap" destination="KGf-0v-91w" id="WMX-So-UOO"/>
                         <outlet property="enterWordTextField" destination="Zlc-7L-YAR" id="yTt-vs-bTR"/>
                         <outlet property="resultsCounterLabel" destination="Glj-44-LYQ" id="5MA-Sv-OEk"/>
                         <outlet property="wordToAnagramLabel" destination="pic-XY-5Rc" id="jLJ-Ju-2mh"/>
+<<<<<<< HEAD
 =======
                         <outlet property="anagramWordLabel" destination="pic-XY-5Rc" id="UJc-Ny-cjE"/>
                         <outlet property="correctWordsLabel" destination="CRv-UI-FLX" id="F3U-S9-Onf"/>
@@ -130,6 +147,9 @@
                         <outlet property="resultsLabel" destination="Glj-44-LYQ" id="7Fw-uo-A0e"/>
                         <outlet property="wordEntryTextField" destination="Zlc-7L-YAR" id="1XN-Yh-vyf"/>
 >>>>>>> 2ccc811f9070371d9fd8f86928ae98dd503acce3
+=======
+
+>>>>>>> 1e5313d3adfec8683cb2bd404b237f327d449c85
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
