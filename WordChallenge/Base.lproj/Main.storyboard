@@ -30,8 +30,6 @@
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="(enter word)" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zlc-7L-YAR">
                                         <rect key="frame" x="0.0" y="0.0" width="254" height="40"/>
-                                        <color key="backgroundColor" systemColor="separatorColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -45,7 +43,9 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
+
                                             <action selector="addButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Afu-Od-Nbs"/>
+
                                         </connections>
                                     </button>
                                 </subviews>
@@ -53,13 +53,12 @@
                                     <constraint firstAttribute="height" constant="40" id="KZD-jJ-aB8"/>
                                 </constraints>
                             </stackView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="(correct word list)" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fet-RE-1eL">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(correct word list)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CRv-UI-FLX">
                                 <rect key="frame" x="56" y="252" width="302" height="202"/>
-                                <color key="backgroundColor" systemColor="separatorColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="56" translatesAutoresizingMaskIntoConstraints="NO" id="a86-4O-T2q">
                                 <rect key="frame" x="56" y="462" width="302" height="50"/>
                                 <subviews>
@@ -73,7 +72,9 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
+
                                             <action selector="doneButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="926-TT-jee"/>
+
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Results: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Glj-44-LYQ">
@@ -90,31 +91,35 @@
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="CRv-UI-FLX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="56" id="0a5-Pu-lnJ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2iX-Ni-hNl" secondAttribute="trailing" constant="56" id="0xP-CR-MD4"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="a86-4O-T2q" secondAttribute="trailing" constant="56" id="11y-B7-dHe"/>
                             <constraint firstItem="a86-4O-T2q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="56" id="3YF-fh-qlS"/>
-                            <constraint firstItem="fet-RE-1eL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="56" id="Aif-TS-Fru"/>
+                            <constraint firstItem="CRv-UI-FLX" firstAttribute="top" secondItem="2iX-Ni-hNl" secondAttribute="bottom" constant="24" id="4aR-gd-Xtp"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pic-XY-5Rc" secondAttribute="trailing" constant="56" id="Fo5-rd-1E3"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fet-RE-1eL" secondAttribute="trailing" constant="56" id="Kc6-It-PzP"/>
-                            <constraint firstItem="a86-4O-T2q" firstAttribute="top" secondItem="fet-RE-1eL" secondAttribute="bottom" constant="8" id="L2U-la-hfV"/>
+                            <constraint firstItem="CRv-UI-FLX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HXW-6a-481"/>
+                            <constraint firstItem="a86-4O-T2q" firstAttribute="top" secondItem="CRv-UI-FLX" secondAttribute="bottom" constant="8" id="Mvs-9x-Gi6"/>
                             <constraint firstItem="2iX-Ni-hNl" firstAttribute="top" secondItem="pic-XY-5Rc" secondAttribute="bottom" constant="48" id="VDD-TX-egE"/>
                             <constraint firstItem="pic-XY-5Rc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="56" id="b3b-V4-mva"/>
                             <constraint firstItem="a86-4O-T2q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cdk-2a-ypz"/>
-                            <constraint firstItem="fet-RE-1eL" firstAttribute="top" secondItem="2iX-Ni-hNl" secondAttribute="bottom" constant="24" id="cfu-lR-jjE"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="a86-4O-T2q" secondAttribute="bottom" constant="350" id="eE0-68-NoZ"/>
                             <constraint firstItem="2iX-Ni-hNl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kgp-28-lrD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CRv-UI-FLX" secondAttribute="trailing" constant="56" id="nJb-eZ-N1T"/>
+                            <constraint firstItem="CRv-UI-FLX" firstAttribute="top" secondItem="2iX-Ni-hNl" secondAttribute="bottom" constant="24" id="oKU-HM-NWU"/>
                             <constraint firstItem="2iX-Ni-hNl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="56" id="orW-2a-Dj5"/>
                             <constraint firstItem="pic-XY-5Rc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sdv-pD-Zb0"/>
-                            <constraint firstItem="fet-RE-1eL" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="vZB-at-UPh"/>
                             <constraint firstItem="pic-XY-5Rc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="56" id="w5B-UU-5MI"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+
+                        <outlet property="correctWordTextView" destination="CRv-UI-FLX" id="ZIv-vR-1zb"/>
                         <outlet property="doneButtonTextSwap" destination="KGf-0v-91w" id="WMX-So-UOO"/>
                         <outlet property="enterWordTextField" destination="Zlc-7L-YAR" id="yTt-vs-bTR"/>
                         <outlet property="resultsCounterLabel" destination="Glj-44-LYQ" id="5MA-Sv-OEk"/>
                         <outlet property="wordToAnagramLabel" destination="pic-XY-5Rc" id="jLJ-Ju-2mh"/>
+
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
