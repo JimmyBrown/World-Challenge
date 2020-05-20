@@ -42,6 +42,9 @@
                                         <state key="normal" title="Add">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="addButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Afu-Od-Nbs"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -66,6 +69,9 @@
                                         <state key="normal" title="Done">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="doneButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="926-TT-jee"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Results: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Glj-44-LYQ">
                                         <rect key="frame" x="106" y="0.0" width="196" height="50"/>
@@ -102,6 +108,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="correctWordTextView" destination="CRv-UI-FLX" id="ZIv-vR-1zb"/>
+                        <outlet property="doneButtonTextSwap" destination="KGf-0v-91w" id="WMX-So-UOO"/>
+                        <outlet property="enterWordTextField" destination="Zlc-7L-YAR" id="yTt-vs-bTR"/>
+                        <outlet property="resultsCounterLabel" destination="Glj-44-LYQ" id="5MA-Sv-OEk"/>
+                        <outlet property="wordToAnagramLabel" destination="pic-XY-5Rc" id="jLJ-Ju-2mh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
