@@ -9,9 +9,9 @@
 import UIKit
 
 class ViewController: UIViewController {
+
     
-    
-  // MARK: - Outlets
+  
     @IBOutlet weak var enterWordTextField: UITextField!
     @IBOutlet weak var wordToAnagramLabel: UILabel!
     @IBOutlet weak var correctWordTextView: UILabel!
@@ -19,7 +19,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var doneButtonTextSwap: UIButton!
     var addedWords: [String] = []
     var currentWord: String = ""
-    
     
     // MARK: - Properties
     
@@ -64,4 +63,3 @@ class ViewController: UIViewController {
         resultsCounterLabel.text = "Results: \(String(correctWordsCount))/\(String(numberOfCorrectAnswers))"
         
     }
-  
