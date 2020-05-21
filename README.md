@@ -1,6 +1,6 @@
 # Word-Challenge
 
-This is not The Greatest Song in the World, no.
+This is not The Greatest Game in the World, no.
 This is just a tribute.
 
 
