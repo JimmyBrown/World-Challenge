@@ -62,7 +62,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="addButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Afu-Od-Nbs"/>
+
                                         </connections>
                                     </button>
                                 </subviews>
@@ -89,6 +89,9 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
+
+  
+
                                             <action selector="doneButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="926-TT-jee"/>
                                         </connections>
                                     </button>
@@ -128,11 +131,15 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="correctWordTextView" destination="CRv-UI-FLX" id="ZIv-vR-1zb"/>
-                        <outlet property="doneButtonTextSwap" destination="KGf-0v-91w" id="WMX-So-UOO"/>
-                        <outlet property="enterWordTextField" destination="Zlc-7L-YAR" id="yTt-vs-bTR"/>
-                        <outlet property="resultsCounterLabel" destination="Glj-44-LYQ" id="5MA-Sv-OEk"/>
-                        <outlet property="wordToAnagramLabel" destination="pic-XY-5Rc" id="jLJ-Ju-2mh"/>
+
+
+                        <outlet property="anagramWordLabel" destination="pic-XY-5Rc" id="UJc-Ny-cjE"/>
+                        <outlet property="correctWordsLabel" destination="CRv-UI-FLX" id="F3U-S9-Onf"/>
+                        <outlet property="doneButton" destination="KGf-0v-91w" id="1fe-Xe-xzl"/>
+                        <outlet property="resultsLabel" destination="Glj-44-LYQ" id="7Fw-uo-A0e"/>
+                        <outlet property="wordEntryTextField" destination="Zlc-7L-YAR" id="1XN-Yh-vyf"/>
+
+
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
