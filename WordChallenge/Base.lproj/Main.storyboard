@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,8 +16,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(word to anagram)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pic-XY-5Rc">
-                                <rect key="frame" x="56" y="100" width="302" height="40"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="GP5-O8-gMB">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view alpha="0.40000000000000002" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uPB-DA-gMU">
+                                <rect key="frame" x="30" y="44" width="354" height="497"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="WordChallenge" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r2w-VW-HYr">
+                                        <rect key="frame" x="67" y="17" width="220" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="32"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="(word to anagram)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pic-XY-5Rc">
+                                <rect key="frame" x="56" y="128" width="302" height="40"/>
                                 <color key="backgroundColor" systemColor="separatorColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Gr4-ME-w9z"/>
@@ -28,14 +47,14 @@
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2iX-Ni-hNl">
                                 <rect key="frame" x="56" y="188" width="302" height="40"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="(enter word)" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zlc-7L-YAR">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="(enter word)" borderStyle="roundedRect" placeholder="Enter Anagram..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zlc-7L-YAR">
                                         <rect key="frame" x="0.0" y="0.0" width="254" height="40"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uv5-Ls-LhQ">
                                         <rect key="frame" x="262" y="0.0" width="40" height="40"/>
-                                        <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" name="burntRed"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="Uv5-Ls-LhQ" secondAttribute="height" multiplier="1:1" id="6Ad-6h-SKP"/>
                                         </constraints>
@@ -43,17 +62,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-<<<<<<< HEAD
-<<<<<<< HEAD
-                                            <action selector="addButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Afu-Od-Nbs"/>
-=======
-                                            <action selector="addWordButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7qk-o0-SfW"/>
->>>>>>> 2ccc811f9070371d9fd8f86928ae98dd503acce3
-=======
 
-                                            <action selector="addButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Afu-Od-Nbs"/>
-
->>>>>>> 1e5313d3adfec8683cb2bd404b237f327d449c85
                                         </connections>
                                     </button>
                                 </subviews>
@@ -72,7 +81,7 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KGf-0v-91w">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                        <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" name="burntRed"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="KGf-0v-91w" secondAttribute="height" multiplier="1:1" id="kIy-os-AKL"/>
                                         </constraints>
@@ -80,17 +89,10 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-<<<<<<< HEAD
-<<<<<<< HEAD
-                                            <action selector="doneButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="926-TT-jee"/>
-=======
-                                            <action selector="doneButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T2s-zR-S7p"/>
->>>>>>> 2ccc811f9070371d9fd8f86928ae98dd503acce3
-=======
+
+  
 
                                             <action selector="doneButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="926-TT-jee"/>
-
->>>>>>> 1e5313d3adfec8683cb2bd404b237f327d449c85
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Results: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Glj-44-LYQ">
@@ -129,27 +131,15 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 
->>>>>>> 1e5313d3adfec8683cb2bd404b237f327d449c85
-                        <outlet property="correctWordTextView" destination="CRv-UI-FLX" id="ZIv-vR-1zb"/>
-                        <outlet property="doneButtonTextSwap" destination="KGf-0v-91w" id="WMX-So-UOO"/>
-                        <outlet property="enterWordTextField" destination="Zlc-7L-YAR" id="yTt-vs-bTR"/>
-                        <outlet property="resultsCounterLabel" destination="Glj-44-LYQ" id="5MA-Sv-OEk"/>
-                        <outlet property="wordToAnagramLabel" destination="pic-XY-5Rc" id="jLJ-Ju-2mh"/>
-<<<<<<< HEAD
-=======
+
                         <outlet property="anagramWordLabel" destination="pic-XY-5Rc" id="UJc-Ny-cjE"/>
                         <outlet property="correctWordsLabel" destination="CRv-UI-FLX" id="F3U-S9-Onf"/>
                         <outlet property="doneButton" destination="KGf-0v-91w" id="1fe-Xe-xzl"/>
                         <outlet property="resultsLabel" destination="Glj-44-LYQ" id="7Fw-uo-A0e"/>
                         <outlet property="wordEntryTextField" destination="Zlc-7L-YAR" id="1XN-Yh-vyf"/>
->>>>>>> 2ccc811f9070371d9fd8f86928ae98dd503acce3
-=======
 
->>>>>>> 1e5313d3adfec8683cb2bd404b237f327d449c85
+
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -157,4 +147,10 @@
             <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="background" width="516" height="1120"/>
+        <namedColor name="burntRed">
+            <color red="0.66274509803921566" green="0.27450980392156865" blue="0.22745098039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>

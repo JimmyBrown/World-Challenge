@@ -35,7 +35,6 @@ class ViewController: UIViewController {
 =======
 >>>>>>> 1e5313d3adfec8683cb2bd404b237f327d449c85
     
-    @IBOutlet weak var doneButton: UIButton!
     // MARK: - Properties
     
     // MARK: - Lifecycle
@@ -69,9 +68,12 @@ class ViewController: UIViewController {
 =======
 
     @IBAction func addButtonTapped(_ sender: Any) {
+        
     }
     @IBAction func doneButtonTapped(_ sender: Any) {
+        
 
 >>>>>>> 1e5313d3adfec8683cb2bd404b237f327d449c85
 }
 
+}

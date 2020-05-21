@@ -46,7 +46,6 @@
 		BFD006852475BD3C003003B0 = {
 			isa = PBXGroup;
 			children = (
-				E279F9CA2475C19900FFF452 /* model */,
 				BFD006902475BD3C003003B0 /* WordChallenge */,
 				BFD0068F2475BD3C003003B0 /* Products */,
 			);
@@ -63,6 +62,7 @@
 		BFD006902475BD3C003003B0 /* WordChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				E279F9CA2475C19900FFF452 /* model */,
 				BFD006952475BD3C003003B0 /* ViewController.swift */,
 				BFD006972475BD3C003003B0 /* Main.storyboard */,
 				BFD006A52475BE88003003B0 /* Resources */,
