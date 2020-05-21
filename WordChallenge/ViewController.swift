@@ -25,18 +25,22 @@ class ViewController: UIViewController {
     // MARK: - LifecyclecurrentWord
     override func viewDidLoad() {
         super.viewDidLoad()
-        correctWordTextView.text = ""
-        wordToAnagramLabel.text = ""
-        enterWordTextField.text = ""
-        guard let word = AnagramController.shared.keyword.randomElement()?.lowercased() else {return}
-        wordToAnagramLabel.text = word
-        currentWord = word
+        newAnagramChallenge()
         // Do any additional setup after loading the view.
     }
     
     // MARK: - Helpers
     func updateViews() {
         
+    }
+    
+    func newAnagramChallenge() {
+        correctWordTextView.text = ""
+        wordToAnagramLabel.text = ""
+        enterWordTextField.text = ""
+        guard let word = AnagramController.shared.keyword.randomElement()?.lowercased() else {return}
+        wordToAnagramLabel.text = word
+        currentWord = word
     }
     
     
@@ -65,6 +69,6 @@ class ViewController: UIViewController {
             }
         }
         resultsCounterLabel.text = "Results: \(String(correctWordsCount))/\(String(numberOfCorrectAnswers))"
-        
+        newAnagramChallenge()
     }
 }
