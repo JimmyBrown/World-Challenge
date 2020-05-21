@@ -49,6 +49,7 @@ class ViewController: UIViewController {
         print("addButtonTapped")
         addedWords.append(enterText.lowercased())
         correctWordTextView.text = accumText.lowercased() + "\n" + enterText.lowercased()
+        enterWordTextField.text = ""
     }
     
     
