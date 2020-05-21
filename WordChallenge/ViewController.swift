@@ -10,8 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    // MARK: - Outlets
     
+  // MARK: - Outlets
     @IBOutlet weak var enterWordTextField: UITextField!
     @IBOutlet weak var wordToAnagramLabel: UILabel!
     @IBOutlet weak var correctWordTextView: UILabel!
@@ -40,7 +40,7 @@ class ViewController: UIViewController {
     
     // MARK: - Actions
     // addButtonTapped
-    
+
     @IBAction func addButtonTapped(_ sender: Any) {
         guard let enterText = enterWordTextField.text else {return}
         guard let accumText = correctWordTextView.text else {return}
@@ -51,7 +51,7 @@ class ViewController: UIViewController {
     
     
     @IBAction func doneButtonTapped(_ sender: Any) {
-        
+      
         guard let wordAnagramDict = AnagramController.shared.anagrams[currentWord] else {return}
         let numberOfCorrectAnswers = wordAnagramDict.count
         var correctWordsCount = 0
@@ -64,5 +64,4 @@ class ViewController: UIViewController {
         resultsCounterLabel.text = "Results: \(String(correctWordsCount))/\(String(numberOfCorrectAnswers))"
         
     }
-    
-}
+  
