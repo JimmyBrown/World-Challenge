@@ -10,7 +10,7 @@ import Foundation
 
 struct DataAnagram {
     
-    let keyword = ["pots","horse","soup","simple","tooth", "bread", "water", "ocean"]
+    let keyword = ["pots","horse","soup","simple","tooth", "bread", "water", "ocean", "camel"]
     let anagrams = [ "pots": ["Pots", "Opts", "Post", "Stop", "Pots", "Tops", "Spot"],
         "horse": ["horse", "Heros", "Horse", "Hoers", "Shore", "Her So", "She Or", "Hes Or", "Re Ohs", "Re Hos", "Res Oh", "Res Ho"],
         "soup": ["Soup", "Opus", "Op Us", "So Up"],
@@ -18,6 +18,8 @@ struct DataAnagram {
         "tooth": ["Tooth", "Ho Tot", "Oh Tot", "Hot To", "Tho To"],
         "bread": ["Bread", "Bared", "Debar", "Bread", "A Bred", "Dab Re", "Bad Re", "Bra Ed", "Bar Ed", "Rad Be"],
         "water": ["Water", "Tar We", "Art We", "Rat We"],
-        "ocean": ["Ocean", "Canoe", "A Cone", "A Once", "Ace No", "Ace On", "An Eco"]]
+        "ocean": ["Ocean", "Canoe", "A Cone", "A Once", "Ace No", "Ace On", "An Eco"],
+        "camel": ["camel", "lac me", "lac em", "mac el", "cam el"],
+        "riotous": ["riotous", "riot sou", "tiro sou", "trio sou", "I root us", "I or oust", "I or outs", "I Ours To", "I sour to", "I tor sou", "I rot sou", "I ort sou", "I rout so", "I tour so", "I our sot", "Is or out", "Is our to", "Ti or sou", "It Or Sou", "It Our So", "I Or To Us"]]
 
 }

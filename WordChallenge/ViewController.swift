@@ -63,3 +63,4 @@ class ViewController: UIViewController {
         resultsCounterLabel.text = "Results: \(String(correctWordsCount))/\(String(numberOfCorrectAnswers))"
         
     }
+}
