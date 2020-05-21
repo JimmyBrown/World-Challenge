@@ -64,9 +64,9 @@
 			children = (
 				E279F9CA2475C19900FFF452 /* model */,
 				BFD006952475BD3C003003B0 /* ViewController.swift */,
+				A64AD3032475C4EB0072F022 /* AnagramController.swift */,
 				BFD006972475BD3C003003B0 /* Main.storyboard */,
 				BFD006A52475BE88003003B0 /* Resources */,
-				A64AD3032475C4EB0072F022 /* AnagramController.swift */,
 			);
 			path = WordChallenge;
 			sourceTree = "<group>";
